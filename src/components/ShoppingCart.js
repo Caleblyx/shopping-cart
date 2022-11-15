@@ -1,33 +1,62 @@
-import { useState, useEffect } from "react";
-import { render } from "@testing-library/react";
-import { createPortal } from "react-dom";
+import { Link } from "react-router-dom";
+import CartItem from "./CartItem";
+import { CSSTransition } from "react-transition-group";
 
-const Modal = ({children, className="modal", el = 'div'}) => {
-    const [container] = useState(() => {
-        // This will be executed only on the initial render
-        // https://reactjs.org/docs/hooks-reference.html#lazy-initial-state
-        return document.createElement(el);
-      });
-    useEffect(() => {
-        container.classList.add(className);
-        document.body.appendChild(container);
-        return () => {
-            document.body.removeChild(container);
-        }
+const Backdrop = ({isCartOpen}) => {
+    return isCartOpen ? (
+        <div className="backdrop"></div>
+      ) : null;
+  };
+
+const ShoppingCart = ({isCartOpen, cartItems, toggleCartState, changeCartItemQuantity}) => {
+    
+    const cartItemEls = []
+
+    cartItems.forEach(item => {
+        const {uid, image, name, price, quantity} = item
+        cartItemEls.push(
+            <CartItem uid={uid} image={image} name={name} price={price} quantity={quantity} changeCartItemQuantity={changeCartItemQuantity}/>
+        )
     })
 
-    return createPortal(children, container);
-}
+    const isCartEmpty = cartItems.length == 0;
 
-const ShoppingCart = ({toggleCartState}) => {
+    const cartTotal = cartItems.reduce(
+        (total, item) => total + (item.price * item.quantity),
+        0
+    )
 
     return (
-        <Modal>
-            <div className="shopping-cart">
-                <div onClick={toggleCartState} className = "x-icon"> X </div>
-                <div className="cart-title">Your Cart</div>
-            </div>
-        </Modal>
+        <div>
+        <Backdrop isCartOpen={isCartOpen}></Backdrop>
+        <CSSTransition
+                in={isCartOpen}
+                timeout={1500}
+                classNames="dialog"
+                mountOnEnter
+                unmountOnExit
+                appear={true}
+        >
+                <div className="shopping-cart">
+                    <div onClick={toggleCartState} className = "x-icon"> X </div>
+                    <div className="cart-title">Your Cart</div>
+                    {
+                        isCartEmpty
+                        ? 
+                        <div className="empty-cart"> 
+                            Your cart is empty
+                            <Link to={'/shop'}>
+                                <button className="button-40" onClick = {e => toggleCartState()} role="button">Go to shop</button>
+                            </Link> 
+                        </div>
+                        : <div className="filled-cart">
+                            <div className="cart-items">{cartItemEls}</div>
+                            <div className="cart-total">Total: ${cartTotal.toFixed(2)}</div>
+                        </div>
+                    }
+                </div>
+        </CSSTransition>
+        </div>
     )   
 }
 
