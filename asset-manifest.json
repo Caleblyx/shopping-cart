@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.363080b2.css",
-    "main.js": "/static/js/main.423df759.js",
-    "static/js/787.031e6346.chunk.js": "/static/js/787.031e6346.chunk.js",
-    "static/media/wish-you-were-here.jpg": "/static/media/wish-you-were-here.b09b823b54470719eacc.jpg",
-    "static/media/currents.jpeg": "/static/media/currents.d2ba5ee1032db4bc65d0.jpeg",
-    "static/media/room-on-fire.jpeg": "/static/media/room-on-fire.e19c286fb365614e397c.jpeg",
-    "static/media/hatful-of-hollow.webp": "/static/media/hatful-of-hollow.64d0e37927e63ed1331f.webp",
-    "static/media/ok-computer.jpeg": "/static/media/ok-computer.79fb3ba31ac9791f9fae.jpeg",
-    "static/media/abbey-road.jpg": "/static/media/abbey-road.fa7b6086a7b22a937103.jpg",
-    "static/media/am.webp": "/static/media/am.040b9d98788300579422.webp",
-    "static/media/kauai.jpeg": "/static/media/kauai.1a62c93e53d13cabca03.jpeg",
-    "static/media/chanel-orange.jpeg": "/static/media/chanel-orange.6cc5238dce01d8b45c93.jpeg",
-    "static/media/shopping-cart.png": "/static/media/shopping-cart.eca5ee08f37494f3f691.png",
-    "static/media/dark-side-of-the-moon.jpg": "/static/media/dark-side-of-the-moon.4a10fb57f2ee3ae7f110.jpg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.363080b2.css.map": "/static/css/main.363080b2.css.map",
-    "main.423df759.js.map": "/static/js/main.423df759.js.map",
-    "787.031e6346.chunk.js.map": "/static/js/787.031e6346.chunk.js.map"
+    "main.css": "/shopping-cart/static/css/main.363080b2.css",
+    "main.js": "/shopping-cart/static/js/main.fc00c055.js",
+    "static/js/787.031e6346.chunk.js": "/shopping-cart/static/js/787.031e6346.chunk.js",
+    "static/media/wish-you-were-here.jpg": "/shopping-cart/static/media/wish-you-were-here.b09b823b54470719eacc.jpg",
+    "static/media/currents.jpeg": "/shopping-cart/static/media/currents.d2ba5ee1032db4bc65d0.jpeg",
+    "static/media/room-on-fire.jpeg": "/shopping-cart/static/media/room-on-fire.e19c286fb365614e397c.jpeg",
+    "static/media/hatful-of-hollow.webp": "/shopping-cart/static/media/hatful-of-hollow.64d0e37927e63ed1331f.webp",
+    "static/media/ok-computer.jpeg": "/shopping-cart/static/media/ok-computer.79fb3ba31ac9791f9fae.jpeg",
+    "static/media/abbey-road.jpg": "/shopping-cart/static/media/abbey-road.fa7b6086a7b22a937103.jpg",
+    "static/media/am.webp": "/shopping-cart/static/media/am.040b9d98788300579422.webp",
+    "static/media/kauai.jpeg": "/shopping-cart/static/media/kauai.1a62c93e53d13cabca03.jpeg",
+    "static/media/chanel-orange.jpeg": "/shopping-cart/static/media/chanel-orange.6cc5238dce01d8b45c93.jpeg",
+    "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.eca5ee08f37494f3f691.png",
+    "static/media/dark-side-of-the-moon.jpg": "/shopping-cart/static/media/dark-side-of-the-moon.4a10fb57f2ee3ae7f110.jpg",
+    "static/media/logo.svg": "/shopping-cart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/shopping-cart/index.html",
+    "main.363080b2.css.map": "/shopping-cart/static/css/main.363080b2.css.map",
+    "main.fc00c055.js.map": "/shopping-cart/static/js/main.fc00c055.js.map",
+    "787.031e6346.chunk.js.map": "/shopping-cart/static/js/787.031e6346.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.363080b2.css",
-    "static/js/main.423df759.js"
+    "static/js/main.fc00c055.js"
   ]
 }
