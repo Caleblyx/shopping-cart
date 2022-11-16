@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.363080b2.css",
-    "main.js": "/shopping-cart/static/js/main.da409970.js",
+    "main.js": "/shopping-cart/static/js/main.8ee7e43f.js",
     "static/js/787.031e6346.chunk.js": "/shopping-cart/static/js/787.031e6346.chunk.js",
     "static/media/wish-you-were-here.jpg": "/shopping-cart/static/media/wish-you-were-here.b09b823b54470719eacc.jpg",
     "static/media/currents.jpeg": "/shopping-cart/static/media/currents.d2ba5ee1032db4bc65d0.jpeg",
@@ -17,11 +17,11 @@
     "static/media/logo.svg": "/shopping-cart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/shopping-cart/index.html",
     "main.363080b2.css.map": "/shopping-cart/static/css/main.363080b2.css.map",
-    "main.da409970.js.map": "/shopping-cart/static/js/main.da409970.js.map",
+    "main.8ee7e43f.js.map": "/shopping-cart/static/js/main.8ee7e43f.js.map",
     "787.031e6346.chunk.js.map": "/shopping-cart/static/js/787.031e6346.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.363080b2.css",
-    "static/js/main.da409970.js"
+    "static/js/main.8ee7e43f.js"
   ]
 }
