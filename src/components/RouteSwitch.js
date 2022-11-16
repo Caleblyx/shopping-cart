@@ -67,9 +67,9 @@ const RouteSwitch = () => {
     }
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
             <Routes>
-                <Route path="/" element={<Layout toggleCartState = {toggleCartState} cartItems = {cartItems} isCartOpen = {isCartOpen} changeCartItemQuantity= {changeCartItemQuantity}/>}>
+                <Route path="" element={<Layout toggleCartState = {toggleCartState} cartItems = {cartItems} isCartOpen = {isCartOpen} changeCartItemQuantity= {changeCartItemQuantity}/>}>
                     <Route index element={<Home/>}/>
                     <Route path="shop">
                         <Route index element={<Shop shopItems = {shopItems}/>}/>
